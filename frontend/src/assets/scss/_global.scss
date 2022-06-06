@@ -1,0 +1,88 @@
+$backgroung-color: #fff;
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: $backgroung-color;
+}
+
+.main-container {
+    height: 450px;
+    border: 1px solid;
+    max-width: 550px;
+    margin: auto;
+
+
+    .title-container {
+        padding-left: 25px;
+        padding-top: 25px;
+        font-weight: bold;
+        font-size: larger;
+    }
+
+    .middle-container {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 25px;
+
+    }
+
+    .nps-group-container {
+        flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+        padding: 25px 25px 25px 25px;
+
+        .data-container {
+
+            padding-bottom: 25px;
+            margin-bottom: 55px;
+
+        }
+    }
+
+    .nps-score-container {
+        flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+        padding: 25px 25px 25px 25px;
+
+        .data-container {
+
+            padding-bottom: 25px;
+            margin-bottom: 55px;
+
+        }
+    }
+
+    .emoticon-container {
+        flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+        padding: 25px 0px 0px 25px;
+
+        .data-container {
+
+            padding-bottom: 25px;
+            margin-bottom: 55px;
+
+        }
+    }
+}
+
+.main-container button {
+    background: purple;
+    color: #fff;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+
+}
+
+button:disabled,
+button[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
